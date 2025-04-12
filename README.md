@@ -1,47 +1,49 @@
 # ShowNet
 
-ShowNet is a simple macOS menu bar application that displays real-time network speed (upload and download) in your menu bar.
+ShowNet 是一个简单的 macOS 菜单栏应用程序，可以在菜单栏中实时显示网络上传和下载速度。
 
-## Features
+![ShowNet 界面截图](ui.png)
 
-- Displays real-time upload and download speeds
-- Lightweight and minimal resource usage
-- Lives in your menu bar for easy access
-- Simple right-click menu to quit the application
+## 功能特点
 
-## Requirements
+- 实时显示上传和下载速度
+- 轻量级，占用资源少
+- 常驻菜单栏，方便查看
+- 右键菜单可快速退出应用
 
-- macOS 13.0 or later
-- Xcode 14.0 or later (for development)
+## 系统要求
 
-## Installation
+- macOS 13.0 或更高版本
+- Xcode 14.0 或更高版本（用于开发）
 
-### Option 1: Build from Source
+## 安装方法
 
-1. Clone this repository
-2. Open the project in Xcode
-3. Build the application (⌘+B)
-4. Run the application (⌘+R)
+### 方法一：从源代码构建
 
-### Option 2: Run in Release Mode
+1. 克隆本仓库
+2. 在 Xcode 中打开项目
+3. 构建应用 (⌘+B)
+4. 运行应用 (⌘+R)
 
-1. Build the application in Release mode
-2. Move the built ShowNet.app to your Applications folder
-3. Launch the application
+### 方法二：直接运行
 
-## Usage
+1. 在 Release 模式下构建应用
+2. 将生成的 ShowNet.app 移动到应用程序文件夹
+3. 启动应用
 
-Once launched, ShowNet will appear in your menu bar displaying your current network speeds. The values are updated every second.
+## 使用方法
 
-- Upload speed is displayed with an up arrow (↑)
-- Download speed is displayed with a down arrow (↓)
+启动后，ShowNet 会出现在菜单栏中，显示当前的网络速度。数值每秒更新一次。
 
-To quit the application, right-click on the menu bar icon and select "Quit".
+- 上传速度显示为向上箭头 (↑)
+- 下载速度显示为向下箭头 (↓)
 
-## How It Works
+要退出应用，右键点击菜单栏图标并选择"退出"。
 
-ShowNet uses the native Darwin networking APIs to track network interface statistics and calculate real-time speeds. It monitors all active network interfaces to provide accurate readings.
+## 工作原理
 
-## License
+ShowNet 使用原生的 Darwin 网络 API 来跟踪网络接口统计信息并计算实时速度。它会监控所有活动的网络接口以提供准确的读数。
 
-This project is available under the MIT License. 
+## 许可证
+
+本项目采用 MIT 许可证。 
